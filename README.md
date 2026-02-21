@@ -21,11 +21,11 @@
 
 ### INTRODUCTION
 
-#### ℹ️ Information About Data
+#### Information About Data
 
 It's a dataset named "theLook eCommerce" in the Public Datasets section on Google Cloud Platform's BigQuery, it contains synthetic e-commerce and digital marketing information.
 
-#### 🔧 What Tools Have Been Used?
+#### What Tools Have Been Used?
 
 **Google Cloud Platform (GCP)** is a great ecosystem in terms of its vast ecosystem and convenience between each sections; **BigQuery** was used to explore, classify and make deductions with SQL queries; **Looker Studio** was used to visualize inferred correlations and comparisons throughout various dimensions such as time, user region or product categories; **BigQuery ML** was used to make predictions via machine learning algorithms.
 
@@ -73,13 +73,13 @@ Users Who Purchases At Least Once: 80,014 <br>
 
 ► Is there an age group that tends to purchase more than once?
 
-<img src="images/worth_of_ages.png" width="100%">
-> No, not really. All age groups' values seem to uniformly distributed.
+<img src="images/worth_of_ages.png" width="100%"><br>
+> No, not really. All age groups' values seem to uniformly distributed.<br>
 
 ► Is there a traffic source that tends to purchase more than once?
 
-<img src="images/worths_of_traffic_sources.png" width="100%">
-> No, not really. All traffic sources' values seem to uniformly distributed.
+<img src="images/worths_of_traffic_sources.png" width="100%"><br>
+> No, not really. All traffic sources' values seem to uniformly distributed.<br>
 
 ► What do the best customers look like? (High LTV Profiles)
 | user_gender | user_country | traffic_source | customer_count | avg_age | avg_ltv | avg_orders | avg_items | avg_order_value | avg_lifespan_days |
@@ -124,24 +124,20 @@ Users Who Purchases At Least Once: 80,014 <br>
 | Regular Buyers (Rest 90%) | 24812 | 71.71 | 1.11 | 1.49 | 40.90 | 49.60 | 50.40 | Australia, Austria, Belgium | Display, Email, Facebook |
 
 ► How many new customers acquisited each year?
-
-<img src="images/new_customer_count_each_year.png" width="100%">
-> Acquisitions increase every consecutive year, but to talk about success we also need to consider revenue amount each year.
+<img src="images/new_customer_count_each_year.png" width="100%"><br>
+> Acquisitions increase every consecutive year, but to talk about success we also need to consider revenue amount each year.<br>
 
 ► How do the revenue coming from different traffic sources differ across years?
-
-<img src="images/revenue_by_traffic_sources_each_year.png" width="100%">
-> Yes, every year the revenue of each traffic source increases. We are growing.
+<img src="images/revenue_by_traffic_sources_each_year.png" width="100%"><br>
+> Yes, every year the revenue of each traffic source increases. We are growing.<br>
 
 ► How do the revenue coming from different age groups differ across years?
-
-<img src="images/revenue_distribution_by_age_across_years.png" width="100%">
-> Most valuable age group of every year seems to be middle age.
+<img src="images/revenue_distribution_by_age_across_years.png" width="100%"><br>
+> Most valuable age group of every year seems to be middle age.<br>
 
 ► Are customers acquisited during Black Friday or Christmas more valuable?
-
-<img src="images/cohort_values_comparison.png" width="100%">
-> No, it's actually the opposite. Customers who first purchased during any time other than Christmas and Black Friday seasons bring more revenue.
+<img src="images/cohort_values_comparison.png" width="100%"><br>
+> No, it's actually the opposite. Customers who first purchased during any time other than Christmas and Black Friday seasons bring more revenue.<br>
 
 #### Product & Inventory Analysis
 
@@ -191,7 +187,7 @@ Users Who Purchases At Least Once: 80,014 <br>
 | United States | 2 | 21669 | Haggar Work To Weekend Pleated Twill Pant | Haggar | Pants | 5 | 300.00 |
 | United States | 3 | 16922 | Port Authority Silk Touch Polo Shirt | Port Authority | Tops & Tees | 4 | 136.28 |
 
-> Clothings are very popular.
+> Clothings are very popular.<br>
 
 ► Most 3 returned products in each country.
 | user_country | rank | product_id | product_name | product_brand | product_category | total_orders | returned_orders | return_rate_pct |
@@ -217,7 +213,7 @@ Users Who Purchases At Least Once: 80,014 <br>
 | United States | 1 | 19426 | Matix Men's Burbank Sweater | Matix | Sweaters | 3 | 3 | 100.00 |
 | United States | 2 | 22320 | 7 For All Mankind Straight Colored Weft Twill | 7 For All Mankind | Pants | 3 | 3 | 100.00 |
 | United States | 3 | 9698 | Tommy Hilfiger Boat Neck Short Sleeve Top | Tommy Hilfiger | Sleep & Lounge | 3 | 3 | 100.00 |
-
+<br>
 ► Most 3 returned products throughout years
 | order_year | rank | product_id | product_name | product_brand | product_category | total_orders | returned_orders | return_rate_pct |
 |-----------|------|-----------|--------------|--------------|-----------------|-------------|----------------|----------------|
@@ -243,7 +239,7 @@ Users Who Purchases At Least Once: 80,014 <br>
 | 2020 | 2 | 7471 | Volcom Juniors Stealth Bomber Jacket | Volcom | Blazers & Jackets | 3 | 1 | 33.33 |
 | 2020 | 3 | 6482 | VIPARO Pleated Stretch Waist Leather Skirt | VIPARO | Shorts | 3 | 1 | 33.33 |
 
-> Clothings tend to be returned.
+> Clothings tend to be returned.<br>
 
 ► Do well-selling items cause a lot of customer service overhead (returns, longer delivery etc.)?
 | product_category_rank | product_count | avg_orders_per_product | avg_return_rate_pct | avg_delivery_days | avg_days_to_ship | avg_days_in_transit | overall_avg_return_rate | overall_avg_delivery_days | return_rate_diff_from_avg | delivery_days_diff_from_avg |
@@ -251,7 +247,7 @@ Users Who Purchases At Least Once: 80,014 <br>
 | Other Products | 25,765 | 2.5 | 28.88 | 2.34 | 0.34 | 2.0 | 28.77 | 2.34 | 0.11 | 0.0 |
 | Top 50 Sellers | 50 | 8.5 | 31.58 | 2.21 | 0.25 | 1.96 | 28.77 | 2.34 | 2.81 | -0.13 |
 
-> Not really, it's actually the opposite.
+> Not really, it's actually the opposite.<br>
 
 #### Sales & Revenue Analysis
 
@@ -274,7 +270,7 @@ Users Who Purchases At Least Once: 80,014 <br>
 | España | 90.84 | 79.99 | 45.42 | 22.95 | 272.53 | 3 | 6 | 2.00 |
 | Deutschland | 14.99 | 14.99 | 14.99 | 14.99 | 14.99 | 1 | 1 | 1.00 |
 
-> Colombia's AOV is very high because there is a few orders, we can't count it in; in terms of AOV & LTV, Poland is the most profitable.
+> Colombia's AOV is very high because there is a few orders, we can't count it in; in terms of AOV & LTV, Poland is the most profitable.<br>
 
 ► Time Interval Between Orders of Users
 | user_country | total_customer_count | repeating_customer_count | min_interval_days | max_interval_days | avg_interval_days | median_interval_days | pct_quick_return | pct_avg_return | pct_slow_return | avg_1st_to_2nd_days | avg_2nd_to_3rd_days | avg_3rd_to_4th_days |
@@ -295,7 +291,7 @@ Users Who Purchases At Least Once: 80,014 <br>
 | España | 3 | 3 | 54 | 1128 | 612.00 | 654 | 0.00 | 33.33 | 66.67 | 612.00 | - | - |
 | Deutschland | 1 | 0 | - | - | - | - | - | - | - | - | - | - |
 
-> Poland's customers are the fastest returning users after first purchase.
+> Poland's customers are the fastest returning users after first purchase.<br>
 
 ► Average days between Listing Date - Shipping Date - Delivery Date, throughout years
 | order_year | total_items | avg_days_to_ship | min_days_to_ship | max_days_to_ship | avg_days_in_transit | min_days_in_transit | max_days_in_transit | avg_total_delivery_days | min_total_delivery_days | max_total_delivery_days |
@@ -309,7 +305,7 @@ Users Who Purchases At Least Once: 80,014 <br>
 | 2020 | 1030 | 0.93 | 0 | 3 | 2.02 | 0 | 4 | 2.95 | 0 | 7 |
 | 2019 | 352 | 0.98 | 0 | 3 | 1.94 | 0 | 4 | 2.92 | 0 | 6 |
 
-> Every year is very consistent, they still can be lowered via optimizations if possible.
+> Every year is very consistent, they still can be lowered via optimizations if possible.<br>
 
 ► Fulfillment (complete orders), return and cancel rates for each country
 | order_year | user_country | total_order_items | fulfilled_items | returned_items | cancelled_items | fulfilled_pct | returned_pct | cancelled_pct |
