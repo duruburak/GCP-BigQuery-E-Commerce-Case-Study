@@ -16,8 +16,8 @@
 - [Written SQL For the Analyses](#written-sql-for-the-analyses)
     - [Creation of a Sub-Table for Customer Analysis](#creation-of-a-sub-table-for-customer-analysis)
     - [Creation of a Sub-Table for Product Analysis](#creation-of-a-sub-table-for-product-analysis)
-    - [SQL Queries For Customer Analysis](#sql-queries-for-customer-analysis)
-    - [SQL Queries For Product Analysis](#sql-queries-for-product-analysis)
+    - [SQL Queries Used For Customer Analysis](#sql-queries-used-for-customer-analysis)
+    - [SQL Queries Used For Product Analysis](#sql-queries-used-for-product-analysis)
 
 ### INTRODUCTION
 
@@ -52,7 +52,7 @@ The `thelook_ecommerce` dataset includes 7 tables, each containing different kno
 | `orders`               | Lists all order information [order id, user_id, status, order/shipment/deliver/return dates, number of items etc.]                             |
 | `events`               | Lists all event-related information [event id, user_id, session id, date, ip address, location, traffic source, uri, event type etc.]          |
 
-In order to extract deductions, these tables needed to be merged tailored for each analysis. Please find corresponding technical queries in the [bottom](#sql-queries-written-for-the-analyses) section.
+In order to extract deductions, these tables needed to be merged tailored for each analysis. Please find corresponding technical queries in the [bottom](#written-sql-for-the-analyses) section.
 
 #### Descriptive Statistics
 
@@ -189,7 +189,7 @@ Users Who Purchases At Least Once: 80,014 <br>
 
 > Clothings are very popular.<br>
 
-► Most 3 returned products in each country.
+► Most 3 returned products in each country
 | user_country | rank | product_id | product_name | product_brand | product_category | total_orders | returned_orders | return_rate_pct |
 |---------------|------|-----------|--------------|--------------|-----------------|-------------|----------------|----------------|
 | Brasil | 1 | 27902 | Gregg Homme 102625 Magnetic Bikini Brief Swimwear | Gregg Homme | Swim | 3 | 3 | 100.00 |
@@ -213,7 +213,7 @@ Users Who Purchases At Least Once: 80,014 <br>
 | United States | 1 | 19426 | Matix Men's Burbank Sweater | Matix | Sweaters | 3 | 3 | 100.00 |
 | United States | 2 | 22320 | 7 For All Mankind Straight Colored Weft Twill | 7 For All Mankind | Pants | 3 | 3 | 100.00 |
 | United States | 3 | 9698 | Tommy Hilfiger Boat Neck Short Sleeve Top | Tommy Hilfiger | Sleep & Lounge | 3 | 3 | 100.00 |
-<br>
+
 ► Most 3 returned products throughout years
 | order_year | rank | product_id | product_name | product_brand | product_category | total_orders | returned_orders | return_rate_pct |
 |-----------|------|-----------|--------------|--------------|-----------------|-------------|----------------|----------------|
@@ -587,7 +587,7 @@ LEFT JOIN clean_orders o
   ON oi.order_id = o.order_id;
 ```
 
-#### SQL Queries For Customer Analysis
+#### SQL Queries Used For Customer Analysis
 
 ```SQL
 -- CHECKING NULL/MISSING VALUES OF CUSTOMERS WHO PURCHASED
@@ -1155,7 +1155,7 @@ GROUP BY user_gender, user_country, traffic_source
 ORDER BY avg_ltv DESC, customer_count DESC;
 ```
 
-#### SQL Queries For Product Analysis
+#### SQL Queries Used For Product Analysis
 
 ```SQL
 -- TOP 10 PRDUCTS BY REVENUE
